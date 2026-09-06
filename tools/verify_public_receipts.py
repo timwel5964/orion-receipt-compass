@@ -20,6 +20,4 @@ for p in pathlib.Path('receipts/public').glob('*.json'):
             if re.fullmatch(r'[0-9a-fA-F]{64}', x) and not path.endswith(('text_sha256','.sha256')):
                 bad.append(f'{p}: 64-hex secret-like value at {path}')
     walk(data)
-if bad:
-    print(json.dumps({'ok':False,'problems':bad}, indent=2)); sys.exit(1)
-print(json.dumps({'ok':True,'problems':[]}, indent=2))
+print(json.dumps({'ok':not bad,'problems':bad},indent=2)); sys.exit(1 if bad else 0)
