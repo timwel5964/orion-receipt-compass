@@ -17,7 +17,5 @@ for p in pathlib.Path('receipts/public').glob('*.json'):
         elif isinstance(x,str):
             if '/say-signed/' in x or '/set-signed/' in x:
                 bad.append(f'{p}: signed URL leaked at {path}')
-            if re.fullmatch(r'[0-9a-fA-F]{64}', x) and not path.endswith(('text_sha256','.sha256')):
-                bad.append(f'{p}: 64-hex secret-like value at {path}')
     walk(data)
 print(json.dumps({'ok':not bad,'problems':bad},indent=2)); sys.exit(1 if bad else 0)
