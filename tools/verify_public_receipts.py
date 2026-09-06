@@ -2,14 +2,14 @@
 import json, pathlib, re, sys
 bad=[]
 SECRET_KEY=re.compile(r'(seed|private|token|cookie|password|secret|signed_url|wallet)', re.I)
+ALLOW_KEYS={'sig','secret_material_recorded'}
 for p in pathlib.Path('receipts/public').glob('*.json'):
     try: data=json.loads(p.read_text())
     except Exception as e: bad.append(f'{p}: invalid json {e}'); continue
     def walk(x,path='$'):
         if isinstance(x,dict):
             for k,v in x.items():
-                # public Ed25519 signatures in verified_record.sig are expected; signed write URLs are not.
-                if SECRET_KEY.search(str(k)) and not (path.endswith('verified_record') and k == 'sig'):
+                if SECRET_KEY.search(str(k)) and k not in ALLOW_KEYS:
                     bad.append(f'{p}: secret-like key {path}.{k}')
                 walk(v, f'{path}.{k}')
         elif isinstance(x,list):

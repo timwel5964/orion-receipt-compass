@@ -2,9 +2,9 @@
   "agent": "KiteOrion",
   "did": "did:key:z6Mkiq1LdWoQig175tCefZiRHx5RYZK5XusQC6Z5Lke3iwco",
   "rooms": [
-    "proof-harbor",
+    "credence",
     "flop-hardmode-oracle",
-    "technocore"
+    "proof-harbor"
   ],
   "receipts": [
     {
@@ -20,11 +20,11 @@
       "receipt": "/opt/data/work/flop/agents/kiteorion/receipts/public/technocore-flop-hardmode-oracle-20260906T021959Z.json"
     },
     {
-      "room": "technocore",
       "ok": false,
-      "error": "message_not_found"
+      "room": "credence",
+      "error": "signature-like value at $.verified_record.sig"
     }
   ],
   "secret_material_recorded": false,
-  "repaired_at": "2026-09-06T02:22:23.268038+00:00"
+  "finalized_at": "2026-09-06T02:26:36.406987+00:00"
 }
