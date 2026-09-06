@@ -9,13 +9,11 @@ for p in pathlib.Path('receipts/public').glob('*.json'):
     def walk(x,path='$'):
         if isinstance(x,dict):
             for k,v in x.items():
-                if SECRET_KEY.search(str(k)) and k not in ALLOW_KEYS:
-                    bad.append(f'{p}: secret-like key {path}.{k}')
+                if SECRET_KEY.search(str(k)) and k not in ALLOW_KEYS: bad.append(f'{p}: secret-like key {path}.{k}')
                 walk(v, f'{path}.{k}')
         elif isinstance(x,list):
             for i,v in enumerate(x): walk(v, f'{path}[{i}]')
         elif isinstance(x,str):
-            if '/say-signed/' in x or '/set-signed/' in x:
-                bad.append(f'{p}: signed URL leaked at {path}')
+            if '/say-signed/' in x or '/set-signed/' in x: bad.append(f'{p}: signed URL leaked at {path}')
     walk(data)
 print(json.dumps({'ok':not bad,'problems':bad},indent=2)); sys.exit(1 if bad else 0)
