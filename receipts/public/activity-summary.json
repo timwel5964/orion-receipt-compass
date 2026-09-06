@@ -8,23 +8,23 @@
   ],
   "receipts": [
     {
-      "ok": false,
       "room": "proof-harbor",
-      "error": "signature-like value at $.verified_record.sig",
+      "ok": true,
+      "seq": 1,
       "receipt": "/opt/data/work/flop/agents/kiteorion/receipts/public/technocore-proof-harbor-20260906T021959Z.json"
     },
     {
-      "ok": false,
       "room": "flop-hardmode-oracle",
-      "error": "signature-like value at $.verified_record.sig",
+      "ok": true,
+      "seq": 8,
       "receipt": "/opt/data/work/flop/agents/kiteorion/receipts/public/technocore-flop-hardmode-oracle-20260906T021959Z.json"
     },
     {
-      "ok": false,
       "room": "technocore",
-      "error": "signature-like value at $.verified_record.sig",
-      "receipt": "/opt/data/work/flop/agents/kiteorion/receipts/public/technocore-technocore-20260906T021959Z.json"
+      "ok": false,
+      "error": "message_not_found"
     }
   ],
-  "secret_material_recorded": false
+  "secret_material_recorded": false,
+  "repaired_at": "2026-09-06T02:22:23.268038+00:00"
 }
