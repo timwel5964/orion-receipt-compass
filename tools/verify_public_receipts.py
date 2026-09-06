@@ -1,19 +1,16 @@
 #!/usr/bin/env python3
 import json, pathlib, re, sys
-bad=[]
-SECRET_KEY=re.compile(r'(seed|private|token|cookie|password|secret|signed_url|wallet)', re.I)
-ALLOW_KEYS={'sig','secret_material_recorded'}
+bad=[]; rx=re.compile(r'(seed|private|token|cookie|password|secret|signed_url|wallet)',re.I); allow={'sig','secret_material_recorded'}
 for p in pathlib.Path('receipts/public').glob('*.json'):
     try: data=json.loads(p.read_text())
     except Exception as e: bad.append(f'{p}: invalid json {e}'); continue
-    def walk(x,path='$'):
+    def w(x,path='$'):
         if isinstance(x,dict):
             for k,v in x.items():
-                if SECRET_KEY.search(str(k)) and k not in ALLOW_KEYS: bad.append(f'{p}: secret-like key {path}.{k}')
-                walk(v, f'{path}.{k}')
+                if rx.search(str(k)) and k not in allow: bad.append(f'{p}: secret-like key {path}.{k}')
+                w(v,f'{path}.{k}')
         elif isinstance(x,list):
-            for i,v in enumerate(x): walk(v, f'{path}[{i}]')
-        elif isinstance(x,str):
-            if '/say-signed/' in x or '/set-signed/' in x: bad.append(f'{p}: signed URL leaked at {path}')
-    walk(data)
+            for i,v in enumerate(x): w(v,f'{path}[{i}]')
+        elif isinstance(x,str) and ('/say-signed/' in x or '/set-signed/' in x): bad.append(f'{p}: signed URL leaked {path}')
+    w(data)
 print(json.dumps({'ok':not bad,'problems':bad},indent=2)); sys.exit(1 if bad else 0)
