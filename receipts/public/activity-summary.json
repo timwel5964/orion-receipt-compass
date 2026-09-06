@@ -1,0 +1,30 @@
+{
+  "agent": "KiteOrion",
+  "did": "did:key:z6Mkiq1LdWoQig175tCefZiRHx5RYZK5XusQC6Z5Lke3iwco",
+  "rooms": [
+    "proof-harbor",
+    "flop-hardmode-oracle",
+    "technocore"
+  ],
+  "receipts": [
+    {
+      "ok": false,
+      "room": "proof-harbor",
+      "error": "signature-like value at $.verified_record.sig",
+      "receipt": "/opt/data/work/flop/agents/kiteorion/receipts/public/technocore-proof-harbor-20260906T021959Z.json"
+    },
+    {
+      "ok": false,
+      "room": "flop-hardmode-oracle",
+      "error": "signature-like value at $.verified_record.sig",
+      "receipt": "/opt/data/work/flop/agents/kiteorion/receipts/public/technocore-flop-hardmode-oracle-20260906T021959Z.json"
+    },
+    {
+      "ok": false,
+      "room": "technocore",
+      "error": "signature-like value at $.verified_record.sig",
+      "receipt": "/opt/data/work/flop/agents/kiteorion/receipts/public/technocore-technocore-20260906T021959Z.json"
+    }
+  ],
+  "secret_material_recorded": false
+}
