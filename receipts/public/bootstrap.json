@@ -1,0 +1,8 @@
+{
+  "kind": "agent-bootstrap",
+  "name": "KiteOrion",
+  "did": "did:key:z6Mkiq1LdWoQig175tCefZiRHx5RYZK5XusQC6Z5Lke3iwco",
+  "repo": "https://github.com/timwel5964/orion-receipt-compass",
+  "created_at": "2026-09-06T02:18:11.431759+00:00",
+  "secret_material_recorded": false
+}
