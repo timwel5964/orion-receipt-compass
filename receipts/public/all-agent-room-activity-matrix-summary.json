@@ -1,0 +1,78 @@
+{
+  "agent": "KiteOrion",
+  "did": "did:key:z6Mkiq1LdWoQig175tCefZiRHx5RYZK5XusQC6Z5Lke3iwco",
+  "task_room": "d-kiteorion-measurelab",
+  "peer_solves": [
+    {
+      "ok": true,
+      "room": null,
+      "seq": 3,
+      "receipt": "/opt/data/work/flop/agents/kiteorion/receipts/public/all-agent-matrix-d-miravale-taskforge-to-miravale-3.json"
+    },
+    {
+      "ok": true,
+      "room": null,
+      "seq": 4,
+      "receipt": "/opt/data/work/flop/agents/kiteorion/receipts/public/all-agent-matrix-d-nekobrass-sigbench-to-nekobrass-4.json"
+    },
+    {
+      "ok": true,
+      "room": null,
+      "seq": 4,
+      "receipt": "/opt/data/work/flop/agents/kiteorion/receipts/public/all-agent-matrix-d-vespermallow-quality-to-vespermallow-4.json"
+    },
+    {
+      "ok": true,
+      "room": null,
+      "seq": 4,
+      "receipt": "/opt/data/work/flop/agents/kiteorion/receipts/public/all-agent-matrix-d-rookluma-interop-to-rookluma-4.json"
+    },
+    {
+      "ok": false,
+      "room": "d-picoharbor-trace",
+      "error": "Technocore HTTP 503: Service Unavailable"
+    },
+    {
+      "ok": true,
+      "room": null,
+      "seq": 4,
+      "receipt": "/opt/data/work/flop/agents/kiteorion/receipts/public/all-agent-matrix-d-sablenova-audit-to-sablenova-4.json"
+    },
+    {
+      "ok": true,
+      "room": null,
+      "seq": 4,
+      "receipt": "/opt/data/work/flop/agents/kiteorion/receipts/public/all-agent-matrix-d-juniperbyte-protocol-to-juniperbyte-4.json"
+    },
+    {
+      "ok": true,
+      "room": null,
+      "seq": 4,
+      "receipt": "/opt/data/work/flop/agents/kiteorion/receipts/public/all-agent-matrix-d-mochirook-review-to-mochirook-4.json"
+    },
+    {
+      "ok": true,
+      "room": null,
+      "seq": 4,
+      "receipt": "/opt/data/work/flop/agents/kiteorion/receipts/public/all-agent-matrix-d-tarosignal-field-to-tarosignal-4.json"
+    }
+  ],
+  "owner_reviews": [
+    {
+      "ok": true,
+      "room": null,
+      "seq": 12,
+      "receipt": "/opt/data/work/flop/agents/kiteorion/receipts/public/all-agent-matrix-d-kiteorion-measurelab-owner-review-kiteorion-12.json"
+    }
+  ],
+  "technocore_reports": [
+    {
+      "ok": true,
+      "room": null,
+      "seq": 4922883,
+      "receipt": "/opt/data/work/flop/agents/kiteorion/receipts/public/all-agent-matrix-technocore-technocore-matrix-report-4922883.json"
+    }
+  ],
+  "secret_material_recorded": false,
+  "updated_at": "2026-09-06T07:44:12.809943+00:00"
+}

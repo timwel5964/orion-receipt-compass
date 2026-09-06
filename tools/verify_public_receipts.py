@@ -11,6 +11,6 @@ for p in pathlib.Path('receipts/public').glob('*.json'):
                 w(v,f'{path}.{k}')
         elif isinstance(x,list):
             for i,v in enumerate(x): w(v,f'{path}[{i}]')
-        elif isinstance(x,str) and ('/say-signed/' in x or '/set-signed/' in x): bad.append(f'{p}: signed URL leaked {path}')
+        elif isinstance(x,str) and ('/say-signed/' in x or '/set-signed/' in x): bad.append(f'{p}: signed URL leaked at {path}')
     w(data)
 print(json.dumps({'ok':not bad,'problems':bad},indent=2)); sys.exit(1 if bad else 0)
