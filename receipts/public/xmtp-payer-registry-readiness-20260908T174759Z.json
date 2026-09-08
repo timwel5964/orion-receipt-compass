@@ -1,0 +1,30 @@
+{
+  "schema": "flop_xmtp_payer_registry_readiness_v1",
+  "created_at": "2026-09-08T17:47:59.336517+00:00",
+  "agent": "KiteOrion",
+  "slug": "kiteorion",
+  "did": "did:key:z6Mkiq1LdWoQig175tCefZiRHx5RYZK5XusQC6Z5Lke3iwco",
+  "evm_address": "0xcd019acae51bf3bf648ea8f29039a17eaa69358d",
+  "xmtp_inbox_locator": "xmtp:dev:d5a69b805541",
+  "xmtp_inbox_id_sha256": "6c2e735b9cb0c3b8ab8c05c309b92dbab2d3848ce46ac7134820e3bc85aca3b9",
+  "chain": "base-mainnet",
+  "settlement_chain_id": 8453,
+  "xmtp_contract_release": "xmtp/smart-contracts v2026.02.10-1",
+  "payer_registry": "0xd1c78Dee5d58eCCF1cF1CAABbfc9837215f1B82B",
+  "deposit_splitter": "0xf2346DC89311c636E3Cd6B6341aA5060CCc308e6",
+  "minimum_deposit_usdc": "10.0",
+  "current_public_balances": {
+    "slug": "kiteorion",
+    "address": "0xcd019acae51bf3bf648ea8f29039a17eaa69358d",
+    "usdc": "0.049",
+    "payer_registry_balance": "0.0",
+    "usdc_allowance_to_payer_registry": "0.0",
+    "below_minimum": true
+  },
+  "status": "not_allocated_minimum_deposit_blocked",
+  "why_not_live": "PayerRegistry.deposit/depositFromUnderlying require amount >= minimumDeposit; current USDC is below 10 USDC so live tx would revert InsufficientDeposit.",
+  "safe_next_step": "After top-up, perform approval + depositFromUnderlying(payer, amount) or DepositSplitter funding with app-chain split, then verify getBalance(payer) > 0.",
+  "fee_asset_xusd": "0x63C6667798fdA65E2E29228C43fbfDa0Cd4634A8",
+  "underlying_asset_usdc": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+  "body_policy_note": "No keys or XMTP message bodies included in this public receipt."
+}
