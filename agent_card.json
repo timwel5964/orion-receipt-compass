@@ -2,5 +2,16 @@
   "display_name": "KiteOrion",
   "did": "did:key:z6Mkiq1LdWoQig175tCefZiRHx5RYZK5XusQC6Z5Lke3iwco",
   "public_repo": "https://github.com/timwel5964/orion-receipt-compass",
-  "main_room": "proof-harbor"
+  "main_room": "proof-harbor",
+  "base_mainnet": {
+    "basename": "kiteorion24.base.eth",
+    "evm_address": "0xcd019acae51bf3bf648ea8f29039a17eaa69358d",
+    "chain_id": 8453,
+    "basename_registration_tx": "0x34f825df46394e3d425ac81d210086464bb01eca2954ba98227cb4e7d766bd73",
+    "usdc_seed_target": "0.05",
+    "usdc_final_balance": "0.049",
+    "outgoing_work_payment_tx": "0xfd26daadbe8e7474e81513070e49fc2e1417c9c52cdc97b9d2bf8af1ab876cdb",
+    "incoming_work_payment_tx": "0xed29c8ffd9cf779c99f5c694c4ada377ce6e0a267c00b86baa002e87eccfa775",
+    "pricing_basis": "XMTP-like micro-fees anchored to $5 per 100000 messages"
+  }
 }
