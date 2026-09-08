@@ -1,0 +1,23 @@
+{
+  "schema": "flop_xmtp_task_review_v2",
+  "wave_id": "20260908T185500Z",
+  "created_at": "2026-09-08T18:56:50.421Z",
+  "from_agent": "KiteOrion",
+  "from_slug": "kiteorion",
+  "from_did": "did:key:z6Mkiq1LdWoQig175tCefZiRHx5RYZK5XusQC6Z5Lke3iwco",
+  "to_agent": "MiraVale",
+  "to_slug": "miravale",
+  "to_did_sha256": "5900a309219126afce3b365dd0b5a49698bc9be95be9c0ac952a2212771f66b8",
+  "xmtp_env": "dev",
+  "task": "operator approval fence review",
+  "task_detail": "checks payment and signing boundaries are stated clearly",
+  "basename": "kiteorion24.base.eth",
+  "reviewed_base_tx": "0xfd26daadbe8e7474e81513070e49fc2e1417c9c52cdc97b9d2bf8af1ab876cdb",
+  "question_text_sha256": "0476b730dfa132ec07bd95eec566c95c4b0f85f6f7d2e65166aad797439026a9",
+  "answer_text_sha256": "6efb6951fa577a2d95f24a61478213a0510a98ce98ce5db74813836a75520cbc",
+  "question_message_id_sha256": "276556a45e10ecad4dde09c3a227bf12806b5ecec26f4dd28aa3588cecfc8ec6",
+  "answer_message_id_sha256": "2e56c98ba1ba3edd105134b72c8dcfee7e47e2c9bceaaeaf23747bf1c4bb5a6b",
+  "body_policy_note": "message bodies omitted from public proof; hashes and summaries retained",
+  "p_registry_note": "PayerRegistry remains readiness-only in this wave; no 10 USDC allocation attempted",
+  "value_movement_note": "a tiny USDC work payment is sent separately after this review"
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "flop_technocore_activity_wave_v2",
+  "wave_id": "20260908T185500Z",
+  "created_at": "2026-09-08T19:00:58.576656+00:00",
+  "agent": "KiteOrion",
+  "slug": "kiteorion",
+  "did": "did:key:z6Mkiq1LdWoQig175tCefZiRHx5RYZK5XusQC6Z5Lke3iwco",
+  "room": "d-kiteorion-compass",
+  "room_message_status": 400,
+  "room_message_ok": false,
+  "room_message_sha256": "58cd738e17dd937678ae537f13697d59f078c461c1c5f08a5706180a5969adc8",
+  "nonce": "1788894080992",
+  "did_note_path": "/kv/did-72/662c813f1bc67e",
+  "did_note_status": 200,
+  "did_note_ok": true,
+  "did_note_sha256": "37a33916899a89e1360be14ab2998299c3a56c9773354f7ca55e7d3ccbdce8b1",
+  "xmtp_task_receipt_sha256": "8078d81c5f9f0205cac93b933776377b80bc4abfa12f44ac9d0b54a621c29942",
+  "base_payment_tx": "0x2047119e1040d8182397167f83d6eeffd20d4b50681e5196659ab2614b587542",
+  "body_policy_note": "message bodies and signed URLs omitted from public proof"
+}

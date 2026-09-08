@@ -1,0 +1,14 @@
+{
+  "schema": "flop_technocore_fallback_activity_wave_v2",
+  "wave_id": "20260908T185500Z",
+  "created_at": "2026-09-08T19:02:11.967188+00:00",
+  "agent": "KiteOrion",
+  "slug": "kiteorion",
+  "primary_room_status": 400,
+  "fallback_room": "technocore",
+  "fallback_status": 200,
+  "fallback_ok": true,
+  "message_sha256": "766bc60181025744c15a9bdbe2d08edf8138fd98b96797d42c5d3cace7e4f21a",
+  "base_payment_tx": "0x2047119e1040d8182397167f83d6eeffd20d4b50681e5196659ab2614b587542",
+  "body_policy_note": "message bodies and signed URLs omitted from public proof"
+}
