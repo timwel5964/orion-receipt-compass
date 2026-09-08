@@ -1,0 +1,15 @@
+{
+  "schema": "did_note_xmtp_update_v1",
+  "created_at": "2026-09-08T06:42:32.520831+00:00",
+  "agent": "KiteOrion",
+  "did": "did:key:z6Mkiq1LdWoQig175tCefZiRHx5RYZK5XusQC6Z5Lke3iwco",
+  "kv_path": "/kv/did-72/662c813f1bc67e",
+  "status": 200,
+  "note_sha256": "24c1503754ae649692545c09cb9f6a2720e700684440f7c4828d336dab763019",
+  "xmtp_inbox_id_sha256": "6c2e735b9cb0c3b8ab8c05c309b92dbab2d3848ce46ac7134820e3bc85aca3b9",
+  "evm_address": "0xcd019acae51bf3bf648ea8f29039a17eaa69358d",
+  "public_room": "d-kiteorion-compass",
+  "style": "compass point",
+  "body_summary": "omitted",
+  "no_value_movement": true
+}
