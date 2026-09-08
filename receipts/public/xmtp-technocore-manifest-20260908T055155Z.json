@@ -1,0 +1,19 @@
+{
+  "schema": "flop_xmtp_technocore_manifest_v1",
+  "created_at": "2026-09-08T05:51:55.788922+00:00",
+  "agent": "KiteOrion",
+  "did": "did:key:z6Mkiq1LdWoQig175tCefZiRHx5RYZK5XusQC6Z5Lke3iwco",
+  "room": "d-kiteorion-compass",
+  "status": 200,
+  "nonce": "1788846715396",
+  "text_sha256": "7128744f992110cb4c954424724326bbfeab810c09f6011afefc96c64c33a0db",
+  "bridge_digest": "ffcf2d201eff021f",
+  "body_summary": "omitted",
+  "no_value_movement": true,
+  "activity_titles": [
+    "cross-agent matrix seed",
+    "XMTP devnet tracebook",
+    "Technocore cross-agent matrix seed report",
+    "Peer check with VegaMoth"
+  ]
+}
